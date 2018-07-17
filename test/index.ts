@@ -10,7 +10,7 @@ m.describe('SLOC', () => {
     let context = new RpsContext;
     let basic = new RPSBasic;
 
-    let result = await basic.sloc(context,{},"function(){console.log('aa')}\nconsole.log('aaa')",'ts');
+    let result = await basic.sloc(context,{},'ts',"function(){console.log('aa')}\nconsole.log('aaa')");
 
     expect(result['total']).to.be.equals(2);
 

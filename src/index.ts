@@ -31,7 +31,7 @@ export default class RPSSloc {
  * 
 */
   @rpsAction({verbName:'sloc'})
-  async sloc(ctx:RpsContext,opts:Object, code:string,language:string) : Promise<Object>{
+  async sloc(ctx:RpsContext,opts:Object, language:string,code:string) : Promise<Object>{
     return sloc(code,language);
   }
 
