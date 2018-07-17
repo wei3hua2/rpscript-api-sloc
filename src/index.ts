@@ -20,10 +20,11 @@ export default class RPSSloc {
  * @function sloc
  * @memberof SLOC
  * @example
- * ;print 'Hello' again
- * sloc $RESULT
- * @param {string} code source code to be counted
+ * ;compute SLOC from file.ts
+ * read "file.ts"
+ * sloc 'ts' $RESULT
  * @param {string} fileExtension file extension of the supported languages. ts for typescript etc.
+ * @param {string} code source code to be counted
  * @returns {*} The result metrics
  * @summary Compute the SLOC
  * 
